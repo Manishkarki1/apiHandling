@@ -18,6 +18,7 @@ class _UserApiPracticeState extends State<UserApiPractice> {
         await http.get(Uri.parse("https://jsonplaceholder.typicode.com/users"));
     if (response.statusCode == 200) {
       data = jsonDecode(response.body.toString());
+      return data;
     } else {}
   }
 
